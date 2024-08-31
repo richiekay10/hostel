@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>BOOK WITH ELLIOT.</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="css/week 10.css" />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row header fixed-top">
+        <div class="col-12">
+          <p class="text-center py-0 mb-0 small">
+            Explore the best hostels with confidence.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 px-0">
+          <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+            <a class="navbar-brand nav-logo" href="#">HOSTEL HUB</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarNavAltMarkup"
+              aria-controls="navbarNavAltMarkup"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div
+                class="navbar-nav navbar-middle d-flex justify-content-center align-items-center"
+              >
+                <a class="nav-link active mr-4" href="#">
+                  .<span class="sr-only">(current)</span></a
+                >
+                <a class="nav-link text-dark mr-4" href="#">Amenities.</a>
+                <a class="nav-link text-dark mr-4" href="#">Location.</a>
+                <a class="nav-link text-dark mr-4" href="#">Rooms.</a>
+                <button
+                  type="button"
+                  class="btn btn-outline-primary rounded-pill header-button py-0 px-3"
+                >
+                   <a href="#" class="btn-cta">Book Now</a>
+                   
+                </button>
+              </div>
+              <div
+                class="d-flex justify-content-center align-items-center ml-auto"
+              >
+                <p class="mb-0 mr-4">Pair.</p>
+                <i class="fa-regular fa-user mr-4"></i>
+                <i class="fa fa-bag-shopping"></i>
+              </div>
+            </div>
+          </nav>
+
+          <div class="row jumbotron-container">
+            <div class="col-12">
+              <div class="jumbotron jumbotron-div">
+                <div class="jumbotron-info">
+                  <h4 class="text-uppercase small font-weight-bold mb-0">
+                    HEY
+                  </h4>
+                  <h1 class="item-title mb-0 font-italic">
+                    Explore the best hostels with confidence..
+                  </h1>
+                  <p class="mb-5">Worry no more..</p>
+                  
+            
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Start your search...</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <form id="form1">
+                    <div class="form-group">
+                      <input type="date" class="form-control" id="checkin1" placeholder="Check-in Date" required>
+                    </div>
+                    <div class="form-group">
+                      <input type="email" class="form-control" id="email1" placeholder="Email address" required>
+                    </div>
+                     <div class="form-group">
+                      <input type="id number" class="form-control" id="digits" placeholder="Ghana Card ID" required>
+                    </div>
+                    <div class="form-group">
+                      <input type="id number" class="form-control" id="digits" placeholder="Location" required>
+                    </div>
+                    <div class="form-group">
+                      <select class="form-control" id="people1" required>
+                        <option value="" disabled selected>Number of People</option>
+                        <option value="1" data-price="7000">1 Person - GH₵7000</option>
+                        <option value="2" data-price="5000">2 People - GH₵5000</option>
+                        <option value="3" data-price="3900">3 People - GH₵3900</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <input type="text" class="form-control" id="totalPrice1" placeholder="Total Price" readonly>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit Booking</button>
+                  </form>
+                  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var forms = [
+        { formId: '#form1', selectId: '#people1', priceId: '#totalPrice1' },
+        { formId: '#form2', selectId: '#people2', priceId: '#totalPrice2' },
+        { formId: '#form3', selectId: '#people3', priceId: '#totalPrice3' },
+        { formId: '#form4', selectId: '#people4', priceId: '#totalPrice4' }
+      ];
+
+      forms.forEach(function (form) {
+        var peopleSelect = document.querySelector(form.selectId);
+        var priceField = document.querySelector(form.priceId);
+
+        peopleSelect.addEventListener('change', function () {
+          var selectedOption = peopleSelect.options[peopleSelect.selectedIndex];
+          var price = selectedOption.getAttribute('data-price');
+          priceField.value = 'GH₵' + price;
+        });
+      });
+    });
+  </script>
+                </div>
+
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-12">
+              <br class="d-flex justify-content-between explore-section">
+                <p class="display-4 explore-text">Amenities.</p>
+                <br> 
+4-in-a room apartments,
+
+2-in-a room executive apartments,
+
+Study room,
+
+Internet facility,
+
+Access control (for security of our clients),
+
+An Astro Turf football field,
+
+Table tennis,
+
+Snooker .</br>
+                <p>
+                  <a href="#" class="text-capitalize text-dark shop-now-text"
+                    >View more.</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="row mx-5">
+            <div class="col-md-4 product-feature">
+              <div class="main-img-div">
+                <img
+                  class="img-fluid product-display"
+                  src="https://images.pexels.com/photos/5563472/pexels-photo-5563472.jpeg?auto=compress&cs=tinysrgb&w=400"
+                />
+                <div class="img-top-text rounded-pill">
+                  <p class="text-capitalize mb-0 small">Standard Rooms</p>
+                </div>
+                <div class="img-bottom-text d-flex align-items-end">
+                  <p class="mb-0 text-white">
+                    <p class="text-secondary amount mb-0"></p>
+                    <br /><span
+                      class="text-white text-white font-weight-bolder"
+                    >
+                      4 in a room</span
+                    >
+                  </p>
+                </div>
+                <p class="text-white amount mb-0"></p>
+                <div class="hover-img">
+                  <img
+                    class="img-hover"
+                    src="https://images.pexels.com/photos/4940760/pexels-photo-4940760.jpeg?auto=compress&cs=tinysrgb&w=400"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="main-img-div">
+                <img
+                  class="img-fluid product-display"
+                  src="https://images.pexels.com/photos/7969098/pexels-photo-7969098.jpeg?auto=compress&cs=tinysrgb&w=600"
+                />
+                <div class="img-top-text rounded-pill">
+                  <p class="text-capitalize mb-0 small">Executive Rooms.</p>
+                </div>
+                <div class="img-bottom-text d-flex align-items-end">
+                  <p class="mb-0">
+                    2 in a room.<br /><span class="text-white"></span>
+                  </p>
+    
+                </div>
+                <div class="hover-img">
+                  <img
+                    class="img-hover"
+                    src="https://images.pexels.com/photos/4907429/pexels-photo-4907429.jpeg?auto=compress&cs=tinysrgb&w=600"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="main-img-div">
+                <img
+                  class="img-fluid product-display"
+                  src="https://images.pexels.com/photos/5158463/pexels-photo-5158463.jpeg?auto=compress&cs=tinysrgb&w=600"
+                />
+                <div class="img-top-text rounded-pill">
+                  <p class="text-capitalize mb-0 small">Super Executive.</p>
+                </div>
+                <div class="img-bottom-text d-flex align-items-end">
+                  <p class="mb-0">
+                    1 in a room<br /><span class="text-white"></span>
+                  </p>
+                  <p class="text-secondary amount mb-0"> &dollar;</p>
+                </div>
+                <div class="hover-img">
+                  <img
+                    class="img-hover"
+                    src="https://images.pexels.com/photos/4907210/pexels-photo-4907210.jpeg?auto=compress&cs=tinysrgb&w=600"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          
+
+          <div class="row testimonial-row">
+            <div class="col-md-8 testimonial-main-div pl-0">
+              <h1 class="display-4 testimonial-heading pb-5 text-center mt-5">
+                Search with confidence ...
+              </h1>
+              <div class="d-flex align-items-center justify-content-between">
+                <img
+                  class="testimonial-img"
+                  src="https://images.pexels.com/photos/864994/pexels-photo-864994.jpeg?auto=compress&cs=tinysrgb&w=400"
+                />
+                <div class="testimonial-text-main">
+                  <p>
+                    . <i class="fa-sharp fa-solid fa-star fa-sm"></i>
+                    <i class="fa-sharp fa-solid fa-star fa-sm"></i>
+                    <i class="fa-sharp fa-solid fa-star fa-sm"></i>
+                    <i class="fa-sharp fa-solid fa-star fa-sm"></i>
+                    <i class="fa-sharp fa-solid fa-star fa-sm"></i>
+                  </p>
+                  <p class="testimonial-text">Book with happiness.<br /></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 pr-0">
+              <div class="side-img-div">
+                <img
+                  class="testimonial-side-img"
+                  src="https://images.pexels.com/photos/914668/pexels-photo-914668.jpeg?auto=compress&cs=tinysrgb&w=400"
+                />
+                <div class="side-img-text d-flex align-items-start">
+                  <p class="text-white">
+                    <br /><span class="text-secondary small"></span>
+                  </p>
+                  <button
+                    type="button"
+                    class="btn btn-primary testimonial-shop-now-button rounded-pill"
+                  >
+                     <a href="#" class="btn-cta">Book Now</a>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row footer-main mt-5">
+        <div class="col-12">
+          <h4 class="text-white logo-text py-5 px-5">BOOK WITH ELLIOT.</h4>
+
+          <div class="d-flex justify-content-between footer-section-parts">
+            <div>
+              <p class="text-white">Looking for the best roomie?.</p>
+              <input
+                type="email"
+                placeholder="Enter email here for updates"
+                required
+                autocomplete="on"
+                class="w-100 rounded-pill subscribe-input"
+              />
+            </div>
+            <div>
+              <p class="lead text-white font-weight-bolder">
+                Schools Affiliated with
+              </p>
+              <p class="text-white">UG LEGON.</p>
+              <p class="text-white">KNUST.</p>
+              <p class="text-white">UCC.</p>
+              <p class="text-white">ATU.</p>
+              <p class="text-white">UPSA.</p>
+              <p class="text-white">LANCASTER.</p>
+              <p class="text-white">ALX.</p>
+            </div>
+            <div>
+              <p class="lead text-white font-weight-bolder">Support</p>
+              <p class="text-white">Help Center</p>
+              <p class="text-white">FAQs</p>
+              <p class="text-white">STAY DURATION</p>
+              <p class="text-white">PAYMENTS</p>
+              <p class="text-white">Contact Us</p>
+            </div>
+            <div>
+              <p class="lead text-white font-weight-bolder">Everything Else</p>
+              <p class="text-white">Community</p>
+              <p class="text-white">Why Us?</p>
+              <p class="text-white">How to book?</p>
+              <p class="text-white">Discount Program</p>
+              <p class="text-white">Blogs</p>
+              <p class="text-white">Investors</p>
+            </div>
+            <div>
+              <p>
+                <i class="fa-brands fa-twitter text-white"></i>
+                <span class="text-white">Twitter</span><br />
+              </p>
+              <p>
+                <i class="fa-brands fa-instagram text-white"></i>
+                <span class="text-white">Instagram</span><br />
+              </p>
+              <i class="fa-brands fa-square-facebook text-white"></i>
+              <span class="text-white">Facebook</span>
+            </div>
+          </div>
+          <div class="px-4 pt-5 pb-2">
+            <p class="text-uppercase text-white mb-0">
+              &copy; 2023 BOOK WITH ELLIOT .
+              <span class="pl-2">Terms and Conditions</span>
+              <span class="pl-2">Privacy Policy</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      type="text/javascript"
+      src="js/code.jquery.com_jquery-3.7.0.min.js"
+    ></script>
+    <script type="text/javascript" src="js/bootstrap.bundle.js"></script>
+  </body>
+</html>
